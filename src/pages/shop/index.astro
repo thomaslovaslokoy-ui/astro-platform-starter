@@ -1,0 +1,17 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Markdown from '../../components/Markdown.astro';
+import ShopIsland from './_components/ShopIsland';
+
+const explainer = `
+This shop demo uses **[Netlify Blobs](https://docs.netlify.com/blobs/overview/)** as its product catalog storage.
+On first load, six products are seeded into the blob store. The cart is managed as client-side React state —
+click **Add to cart**, adjust quantities, then place an order with your name and email.
+`;
+---
+
+<Layout title="Shop">
+    <h1 class="mb-10">Shop</h1>
+    <Markdown content={explainer} class="mb-12" />
+    <ShopIsland client:load />
+</Layout>
