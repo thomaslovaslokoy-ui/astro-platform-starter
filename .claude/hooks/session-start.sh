@@ -7,6 +7,6 @@ if [ "${CLAUDE_CODE_REMOTE:-}" != "true" ]; then
 fi
 
 echo "Installing npm dependencies..."
-npm install
+npm ci
 
 echo "Session start hook complete."
