@@ -8,5 +8,6 @@ fi
 
 echo "Installing npm dependencies..."
 npm install
+npm ci
 
 echo "Session start hook complete."
